@@ -5,13 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FormaDescontoTipoItem implements FormaDescontoTaxaEntregaInterface{
-    private Map<String, Double> descontosPorTipoItem = new HashMap<String, Double>();
+    Map<String, Double> descontosPorTipoItem = new HashMap<String, Double>();
     
-    descontos
 
-//    public FormaDescontoTipoItem(){
-//        for(FormaDescontoTipoItem desconto : )
-//    }
+    public FormaDescontoTipoItem(){
+        descontosPorTipoItem.put("Alimentos", 2.00);
+    }
     
     @Override
     public CupomDescontoEntrega calcularDesconto(Pedido pedido) {
