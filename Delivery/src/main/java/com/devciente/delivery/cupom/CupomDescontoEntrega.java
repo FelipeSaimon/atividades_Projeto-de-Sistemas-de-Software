@@ -1,6 +1,6 @@
 package com.devciente.delivery.cupom;
 
-class CupomDescontoEntrega {
+public class CupomDescontoEntrega {
     private String nomeFormaDeDesconto;
     private double valorDesconto;
 
