@@ -1,6 +1,6 @@
 package com.devciente.delivery;
 
-class Item {
+public class Item {
     private String nome;
     private int quantidade;
     private Double valorUnitario;
