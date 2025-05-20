@@ -1,0 +1,10 @@
+com/devciente/delivery/Cliente.class
+com/devciente/delivery/cupom/CupomDescontoEntrega.class
+com/devciente/delivery/cupom/FormaDescontoPorBairro.class
+com/devciente/delivery/Delivery.class
+com/devciente/delivery/Pedido.class
+com/devciente/delivery/Item.class
+com/devciente/delivery/cupom/FormaDescontoTipoCliente.class
+com/devciente/delivery/cupom/FormaDescontoTipoItem.class
+com/devciente/delivery/cupom/FormaDescontoTaxaEntregaInterface.class
+com/devciente/delivery/cupom/CalculadoraDescontoService.class

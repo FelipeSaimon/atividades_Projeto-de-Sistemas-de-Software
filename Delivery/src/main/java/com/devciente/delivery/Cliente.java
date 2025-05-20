@@ -1,6 +1,7 @@
 package com.devciente.delivery;
 
 public class Cliente {
+
     private String nome;
     private String tipoCliente;
     private Double fidelidade;
@@ -17,8 +18,10 @@ public class Cliente {
         this.cidade = cidade;
     }
 
-    public Cliente() {
-
+    public Cliente(String nome, String tipoCliente, String bairro) {
+        this.nome = nome;
+        this.tipoCliente = tipoCliente;
+        this.bairro = bairro;
     }
 
     public String getNome() {
@@ -53,6 +56,5 @@ public class Cliente {
     public String toString() {
         return "Cliente{" + "nome=" + nome + ", tipoCliente=" + tipoCliente + ", fidelidade=" + fidelidade + ", logradouro=" + logradouro + ", bairro=" + bairro + ", cidade=" + cidade + '}';
     }
-    
-    
+
 }

@@ -23,7 +23,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" + "nome=" + nome + ", quantidade=" + quantidade + ", valorUnitario=" + valorUnitario + ", tipo=" + tipo + '}';
+        return "Item{" + "nome = " + nome + ", quantidade = " + quantidade + ", valorUnitario = " + valorUnitario + ", tipo = " + tipo + '}';
     }
     
     
