@@ -18,7 +18,7 @@ public class FormaDescontoPorBairro implements FormaDescontoTaxaEntregaInterface
 	}
 
 	@Override
-	public CupomDescontoEntrega calcularDesconto(Pedido pedido) {
+	public void calcularDesconto(Pedido pedido) {
 		double descontoTotalPorBairro = 0;
 
 		bairroCliente = pedido.getCliente().getBairro();
@@ -28,10 +28,9 @@ public class FormaDescontoPorBairro implements FormaDescontoTaxaEntregaInterface
 			if (descontosPorBairro.containsKey(bairroCliente)) {
 				// e se esse bairro está na lista de descontos, e insere o desconto
 				descontoTotalPorBairro += descontosPorBairro.get(bairroCliente);
+                                pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por bairro", descontoTotalPorBairro));
 			}
 		}
-
-		return new CupomDescontoEntrega("Desconto por bairro", descontoTotalPorBairro);
 	}
 
 	@Override

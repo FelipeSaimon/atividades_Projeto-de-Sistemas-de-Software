@@ -3,6 +3,7 @@
  */
 package com.devciente.delivery;
 
+import com.devciente.delivery.cupom.CalculadoraDescontoService;
 import java.time.LocalDate;
 
 
@@ -22,6 +23,10 @@ public class Delivery {
 
         System.out.println("Itens" + pedido.getItens());
         System.out.println("Valor pedido sem descontos: " + pedido.getValorPedido());
+        
+        CalculadoraDescontoService calculadora = new CalculadoraDescontoService();
+        
+        calculadora.calcularDesconto(pedido);
         
         System.out.println(pedido.getCuponsDescontoEntrega());
     }

@@ -17,7 +17,7 @@ public class FormaDescontoTipoCliente implements FormaDescontoTaxaEntregaInterfa
 	}
 
 	@Override
-	public CupomDescontoEntrega calcularDesconto(Pedido pedido) {
+	public void calcularDesconto(Pedido pedido) {
 		double descontoTotalPorTipoCliente = 0;
 
 		// Verifica se o cliente tem um tipo definido
@@ -26,10 +26,11 @@ public class FormaDescontoTipoCliente implements FormaDescontoTaxaEntregaInterfa
 			// e se esse tipo está na lista de descontos, e insere o desconto
 			if (descontosPortipoCliente.containsKey(tipoCliente)) {
 				descontoTotalPorTipoCliente += descontosPortipoCliente.get(tipoCliente);
+                                pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por tipo de cliente", descontoTotalPorTipoCliente));
 			}
 		}
 
-		return new CupomDescontoEntrega("Desconto por tipo de cliente", descontoTotalPorTipoCliente);
+	 
 	}
 
 	@Override

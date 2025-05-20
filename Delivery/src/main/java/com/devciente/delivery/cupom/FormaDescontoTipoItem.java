@@ -16,16 +16,16 @@ public class FormaDescontoTipoItem implements FormaDescontoTaxaEntregaInterface 
     }
 
     @Override
-    public CupomDescontoEntrega calcularDesconto(Pedido pedido) {
+    public void calcularDesconto(Pedido pedido) {
         double descontoTotalPorItem = 0;
 
         for (Item item : pedido.getItens()) {
             String tipo = item.getTipo();
             if (descontosPorTipoItem.containsKey(tipo)) {
                 descontoTotalPorItem += descontosPorTipoItem.get(tipo);
+                pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por tipo de item", descontoTotalPorItem));
             }
         }
-        return new CupomDescontoEntrega("Desconto por tipo de item", descontoTotalPorItem);
     }
 
     @Override
