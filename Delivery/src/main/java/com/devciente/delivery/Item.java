@@ -4,7 +4,7 @@ public class Item {
     private String nome;
     private int quantidade;
     private Double valorUnitario;
-    private String tipo;
+    private final String tipo;
 
     public Item(String nome, int quantidade, Double valorUnitario, String tipo) {
         this.nome = nome;
@@ -18,7 +18,7 @@ public class Item {
     }
     
     public String getTipo(){
-        return "";
+        return tipo;
     }
 
     @Override
