@@ -69,4 +69,8 @@ public class Pedido {
     public Cliente getCliente() {
         return cliente;
     }
+
+    public LocalDate getDataPedido() {
+        return dataPedido;
+    }
 }
