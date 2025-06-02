@@ -1,6 +1,5 @@
 package com.devciente.delivery.cupom;
 
-import com.devciente.delivery.Cliente;
 import com.devciente.delivery.Pedido;
 
 import java.util.HashMap;
