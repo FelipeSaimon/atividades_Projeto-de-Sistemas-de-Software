@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.devciente.delivery;
 
 import com.devciente.delivery.cupom.CalculadoraDescontoService;
@@ -15,7 +11,6 @@ import java.time.LocalDate;
 public class Delivery {
 
     public static void main(String[] args) {
-//        System.out.println("Hello World!");
 
         Pedido pedido = new Pedido(new Cliente("Saimon", "Ouro", "Bela Vista"), LocalDate.now());
 
