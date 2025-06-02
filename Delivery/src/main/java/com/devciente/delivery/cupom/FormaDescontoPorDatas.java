@@ -8,6 +8,6 @@ package com.devciente.delivery.cupom;
  *
  * @author saimon
  */
-public class FormaDescontoPorDatas {
+public class ormaDescontoPorDatas {
     
 }
