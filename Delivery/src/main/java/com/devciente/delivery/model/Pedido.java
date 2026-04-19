@@ -1,6 +1,6 @@
 package com.devciente.delivery.model;
 
-import com.devciente.delivery.cupom.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
 import java.time.LocalDate;
 import java.util.ArrayList;
 

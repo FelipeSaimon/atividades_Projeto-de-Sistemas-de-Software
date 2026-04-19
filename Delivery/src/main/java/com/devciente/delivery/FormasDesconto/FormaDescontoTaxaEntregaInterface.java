@@ -1,4 +1,4 @@
-package com.devciente.delivery.cupom;
+package com.devciente.delivery.FormasDesconto;
 
 import com.devciente.delivery.model.Pedido;
 

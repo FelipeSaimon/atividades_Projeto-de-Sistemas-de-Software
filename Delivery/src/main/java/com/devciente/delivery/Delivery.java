@@ -1,6 +1,6 @@
 package com.devciente.delivery;
 
-import com.devciente.delivery.cupom.service.CalculadoraDescontoService;
+import com.devciente.delivery.FormasDesconto.service.CalculadoraDescontoService;
 import com.devciente.delivery.model.Cliente;
 import com.devciente.delivery.model.Item;
 import com.devciente.delivery.model.Pedido;

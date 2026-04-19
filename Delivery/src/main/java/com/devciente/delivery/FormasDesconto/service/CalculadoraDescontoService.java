@@ -1,8 +1,8 @@
-package com.devciente.delivery.cupom.service;
+package com.devciente.delivery.FormasDesconto.service;
 
 import com.devciente.delivery.model.Pedido;
-import com.devciente.delivery.cupom.*;
-import com.devciente.delivery.cupom.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDesconto.*;
+import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
 
 import java.util.ArrayList;
 import java.util.List;
