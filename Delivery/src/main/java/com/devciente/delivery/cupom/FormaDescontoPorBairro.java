@@ -1,6 +1,7 @@
 package com.devciente.delivery.cupom;
 
-import com.devciente.delivery.Pedido;
+import com.devciente.delivery.model.Pedido;
+import com.devciente.delivery.cupom.model.CupomDescontoEntrega;
 
 import java.util.HashMap;
 import java.util.Map;

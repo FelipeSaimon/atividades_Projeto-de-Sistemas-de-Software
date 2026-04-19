@@ -1,4 +1,4 @@
-package com.devciente.delivery.cupom;
+package com.devciente.delivery.cupom.model;
 
 public class CupomDescontoEntrega {
     private String nomeFormaDeDesconto;

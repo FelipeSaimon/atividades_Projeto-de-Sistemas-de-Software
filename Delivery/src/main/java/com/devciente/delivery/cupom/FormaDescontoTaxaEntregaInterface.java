@@ -1,6 +1,6 @@
 package com.devciente.delivery.cupom;
 
-import com.devciente.delivery.Pedido;
+import com.devciente.delivery.model.Pedido;
 
 public interface FormaDescontoTaxaEntregaInterface {
     void calcularDesconto(Pedido pedido);

@@ -1,4 +1,4 @@
-package com.devciente.delivery;
+package com.devciente.delivery.model;
 
 public class Item {
     private String nome;
