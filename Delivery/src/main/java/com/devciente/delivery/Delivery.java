@@ -1,6 +1,6 @@
 package com.devciente.delivery;
 
-import com.devciente.delivery.FormasDesconto.service.CalculadoraDescontoService;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.service.CalculadoraDescontoTaxaEntregaService;
 import com.devciente.delivery.model.Cliente;
 import com.devciente.delivery.model.Item;
 import com.devciente.delivery.model.Pedido;
@@ -21,7 +21,7 @@ public class Delivery {
         pedido.adicionarItem(new Item("Feijoada", 1, 50.24, "Alimentacao"));
         pedido.adicionarItem(new Item("Caderno", 3, 10.99, "Educacao"));
 
-        CalculadoraDescontoService calculadora = new CalculadoraDescontoService();
+        CalculadoraDescontoTaxaEntregaService calculadora = new CalculadoraDescontoTaxaEntregaService();
 
         calculadora.calcularDesconto(pedido);
 

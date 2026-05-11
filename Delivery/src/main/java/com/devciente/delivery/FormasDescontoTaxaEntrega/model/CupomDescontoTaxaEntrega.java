@@ -1,10 +1,10 @@
-package com.devciente.delivery.FormasDesconto.model;
+package com.devciente.delivery.FormasDescontoTaxaEntrega.model;
 
-public class CupomDescontoEntrega {
+public class CupomDescontoTaxaEntrega {
     private String nomeFormaDeDesconto;
     private double valorDesconto;
 
-    public CupomDescontoEntrega(String nomeFormaDeDesconto, double valorDesconto) {
+    public CupomDescontoTaxaEntrega(String nomeFormaDeDesconto, double valorDesconto) {
         this.nomeFormaDeDesconto = nomeFormaDeDesconto;
         this.valorDesconto = valorDesconto;
     }

@@ -1,24 +1,24 @@
-package com.devciente.delivery.FormasDesconto.service;
+package com.devciente.delivery.FormasDescontoTaxaEntrega.service;
 
 import com.devciente.delivery.model.Pedido;
-import com.devciente.delivery.FormasDesconto.*;
-import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.*;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.model.CupomDescontoTaxaEntrega;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalculadoraDescontoService {
+public class CalculadoraDescontoTaxaEntregaService {
     
     List<FormaDescontoTaxaEntregaInterface> formasDesconto = new ArrayList<>();
     
-    public CalculadoraDescontoService() {
+    public CalculadoraDescontoTaxaEntregaService() {
         formasDesconto.add(new FormaDescontoPorBairro());
         formasDesconto.add(new FormaDescontoTipoCliente());
         formasDesconto.add(new FormaDescontoTipoItem());
     }
     
     public void calcularDesconto(Pedido pedido) {
-        List<CupomDescontoEntrega> cupons = new ArrayList<>();
+        List<CupomDescontoTaxaEntrega> cupons = new ArrayList<>();
         
         for (FormaDescontoTaxaEntregaInterface formaDesconto : formasDesconto) {
             if (formaDesconto.seAplica(pedido)) {

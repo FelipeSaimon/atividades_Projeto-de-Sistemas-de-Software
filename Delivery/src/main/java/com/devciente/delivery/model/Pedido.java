@@ -1,6 +1,6 @@
 package com.devciente.delivery.model;
 
-import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.model.CupomDescontoTaxaEntrega;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -12,9 +12,12 @@ public class Pedido {
     private Double valorPedido = 0.0;
     private LocalDate dataPedido;
     private List<Item> itens = new ArrayList<>();
-    private List<CupomDescontoEntrega> cuponsDescontoEntrega = new ArrayList<>();
+    private List<CupomDescontoTaxaEntrega> cuponsDescontoEntrega = new ArrayList<>();
     private Double valorDescontoConcedido = 0.0; // Posso alterar o nome de atributo do diagrama?
     private Cliente cliente;
+
+    private Double percentualDescontoPedido;
+    private String codigoCupom;
 
     public Pedido(Cliente cliente, LocalDate data) {
         this.cliente = cliente;
@@ -30,7 +33,7 @@ public class Pedido {
         }
     }
 
-    public void adicionarCupom(CupomDescontoEntrega cupom) {
+    public void adicionarCupom(CupomDescontoTaxaEntrega cupom) {
         if (cupom == null) {
             throw new RuntimeException("Cupom inexistente!");
         }
@@ -58,11 +61,15 @@ public class Pedido {
         return itens;
     }
 
+    public Double getPercentualDescontoPedido(){
+        return percentualDescontoPedido;
+    }
+
     public Double getValorDescontoConcedido() {
         return valorDescontoConcedido;
     }
 
-    public List<CupomDescontoEntrega> getCuponsDescontoEntrega() {
+    public List<CupomDescontoTaxaEntrega> getCuponsDescontoEntrega() {
         return cuponsDescontoEntrega;
     }
 

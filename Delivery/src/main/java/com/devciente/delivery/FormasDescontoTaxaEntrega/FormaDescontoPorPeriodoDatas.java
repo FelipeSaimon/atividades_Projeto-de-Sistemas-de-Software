@@ -1,8 +1,8 @@
-package com.devciente.delivery.FormasDesconto;
+package com.devciente.delivery.FormasDescontoTaxaEntrega;
 
 import com.devciente.delivery.model.Pedido;
-import com.devciente.delivery.FormasDesconto.enity.CupomDescontoPorDatas;
-import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.enity.CupomDescontoPorDatas;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.model.CupomDescontoTaxaEntrega;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -31,7 +31,7 @@ public class FormaDescontoPorPeriodoDatas implements FormaDescontoTaxaEntregaInt
 
 		if (maiorPercentual > 0.0) {
 			double desconto = maiorPercentual * pedido.getTaxaEntrega();
-			pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por período de datas", desconto));
+			pedido.adicionarCupom(new CupomDescontoTaxaEntrega("Desconto por período de datas", desconto));
 		}
 	}
 

@@ -1,7 +1,7 @@
-package com.devciente.delivery.FormasDesconto;
+package com.devciente.delivery.FormasDescontoTaxaEntrega;
 
 import com.devciente.delivery.model.Pedido;
-import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.model.CupomDescontoTaxaEntrega;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +27,7 @@ public class FormaDescontoTipoCliente implements FormaDescontoTaxaEntregaInterfa
             // e se esse tipo está na lista de descontos, e insere o desconto
             if (descontosPortipoCliente.containsKey(tipoCliente)) {
                 descontoTotalPorTipoCliente += descontosPortipoCliente.get(tipoCliente);
-                pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por tipo de cliente", descontoTotalPorTipoCliente));
+                pedido.adicionarCupom(new CupomDescontoTaxaEntrega("Desconto por tipo de cliente", descontoTotalPorTipoCliente));
             }
         }
     }

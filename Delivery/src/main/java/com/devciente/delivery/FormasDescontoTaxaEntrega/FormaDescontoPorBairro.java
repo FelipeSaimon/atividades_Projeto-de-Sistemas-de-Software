@@ -1,7 +1,7 @@
-package com.devciente.delivery.FormasDesconto;
+package com.devciente.delivery.FormasDescontoTaxaEntrega;
 
 import com.devciente.delivery.model.Pedido;
-import com.devciente.delivery.FormasDesconto.model.CupomDescontoEntrega;
+import com.devciente.delivery.FormasDescontoTaxaEntrega.model.CupomDescontoTaxaEntrega;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -28,7 +28,7 @@ public class FormaDescontoPorBairro implements FormaDescontoTaxaEntregaInterface
             if (descontosPorBairro.containsKey(bairroCliente)) {
                 // e se esse bairro está na lista de descontos, e insere o desconto
                 descontoTotalPorBairro += descontosPorBairro.get(bairroCliente);
-                pedido.adicionarCupom(new CupomDescontoEntrega("Desconto por bairro", descontoTotalPorBairro));
+                pedido.adicionarCupom(new CupomDescontoTaxaEntrega("Desconto por bairro", descontoTotalPorBairro));
             }
         }
     }
